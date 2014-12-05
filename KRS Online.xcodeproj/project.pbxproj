@@ -1,0 +1,434 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C96EE9E01A32035A00204AA3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C96EE9DF1A32035A00204AA3 /* main.m */; };
+		C96EE9E31A32035A00204AA3 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C96EE9E21A32035A00204AA3 /* AppDelegate.m */; };
+		C96EE9E61A32035A00204AA3 /* KRS_Online.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C96EE9E41A32035A00204AA3 /* KRS_Online.xcdatamodeld */; };
+		C96EE9E91A32035A00204AA3 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C96EE9E81A32035A00204AA3 /* ViewController.m */; };
+		C96EE9EC1A32035A00204AA3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C96EE9EA1A32035A00204AA3 /* Main.storyboard */; };
+		C96EE9EE1A32035A00204AA3 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C96EE9ED1A32035A00204AA3 /* Images.xcassets */; };
+		C96EE9FA1A32035B00204AA3 /* KRS_OnlineTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C96EE9F91A32035B00204AA3 /* KRS_OnlineTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C96EE9F41A32035A00204AA3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C96EE9D21A32035A00204AA3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C96EE9D91A32035A00204AA3;
+			remoteInfo = "KRS Online";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		C96EE9DA1A32035A00204AA3 /* KRS Online.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "KRS Online.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C96EE9DE1A32035A00204AA3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C96EE9DF1A32035A00204AA3 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		C96EE9E11A32035A00204AA3 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		C96EE9E21A32035A00204AA3 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		C96EE9E51A32035A00204AA3 /* KRS_Online.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = KRS_Online.xcdatamodel; sourceTree = "<group>"; };
+		C96EE9E71A32035A00204AA3 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		C96EE9E81A32035A00204AA3 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		C96EE9EB1A32035A00204AA3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		C96EE9ED1A32035A00204AA3 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		C96EE9F31A32035A00204AA3 /* KRS OnlineTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "KRS OnlineTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C96EE9F81A32035A00204AA3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C96EE9F91A32035B00204AA3 /* KRS_OnlineTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KRS_OnlineTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C96EE9D71A32035A00204AA3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C96EE9F01A32035A00204AA3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C96EE9D11A32035A00204AA3 = {
+			isa = PBXGroup;
+			children = (
+				C96EE9DC1A32035A00204AA3 /* KRS Online */,
+				C96EE9F61A32035A00204AA3 /* KRS OnlineTests */,
+				C96EE9DB1A32035A00204AA3 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C96EE9DB1A32035A00204AA3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C96EE9DA1A32035A00204AA3 /* KRS Online.app */,
+				C96EE9F31A32035A00204AA3 /* KRS OnlineTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C96EE9DC1A32035A00204AA3 /* KRS Online */ = {
+			isa = PBXGroup;
+			children = (
+				C96EE9E11A32035A00204AA3 /* AppDelegate.h */,
+				C96EE9E21A32035A00204AA3 /* AppDelegate.m */,
+				C96EE9E71A32035A00204AA3 /* ViewController.h */,
+				C96EE9E81A32035A00204AA3 /* ViewController.m */,
+				C96EE9EA1A32035A00204AA3 /* Main.storyboard */,
+				C96EE9ED1A32035A00204AA3 /* Images.xcassets */,
+				C96EE9E41A32035A00204AA3 /* KRS_Online.xcdatamodeld */,
+				C96EE9DD1A32035A00204AA3 /* Supporting Files */,
+			);
+			path = "KRS Online";
+			sourceTree = "<group>";
+		};
+		C96EE9DD1A32035A00204AA3 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C96EE9DE1A32035A00204AA3 /* Info.plist */,
+				C96EE9DF1A32035A00204AA3 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C96EE9F61A32035A00204AA3 /* KRS OnlineTests */ = {
+			isa = PBXGroup;
+			children = (
+				C96EE9F91A32035B00204AA3 /* KRS_OnlineTests.m */,
+				C96EE9F71A32035A00204AA3 /* Supporting Files */,
+			);
+			path = "KRS OnlineTests";
+			sourceTree = "<group>";
+		};
+		C96EE9F71A32035A00204AA3 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C96EE9F81A32035A00204AA3 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C96EE9D91A32035A00204AA3 /* KRS Online */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C96EE9FD1A32035B00204AA3 /* Build configuration list for PBXNativeTarget "KRS Online" */;
+			buildPhases = (
+				C96EE9D61A32035A00204AA3 /* Sources */,
+				C96EE9D71A32035A00204AA3 /* Frameworks */,
+				C96EE9D81A32035A00204AA3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "KRS Online";
+			productName = "KRS Online";
+			productReference = C96EE9DA1A32035A00204AA3 /* KRS Online.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C96EE9F21A32035A00204AA3 /* KRS OnlineTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C96EEA001A32035B00204AA3 /* Build configuration list for PBXNativeTarget "KRS OnlineTests" */;
+			buildPhases = (
+				C96EE9EF1A32035A00204AA3 /* Sources */,
+				C96EE9F01A32035A00204AA3 /* Frameworks */,
+				C96EE9F11A32035A00204AA3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C96EE9F51A32035A00204AA3 /* PBXTargetDependency */,
+			);
+			name = "KRS OnlineTests";
+			productName = "KRS OnlineTests";
+			productReference = C96EE9F31A32035A00204AA3 /* KRS OnlineTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C96EE9D21A32035A00204AA3 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0600;
+				ORGANIZATIONNAME = Zulham;
+				TargetAttributes = {
+					C96EE9D91A32035A00204AA3 = {
+						CreatedOnToolsVersion = 6.0;
+					};
+					C96EE9F21A32035A00204AA3 = {
+						CreatedOnToolsVersion = 6.0;
+						TestTargetID = C96EE9D91A32035A00204AA3;
+					};
+				};
+			};
+			buildConfigurationList = C96EE9D51A32035A00204AA3 /* Build configuration list for PBXProject "KRS Online" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C96EE9D11A32035A00204AA3;
+			productRefGroup = C96EE9DB1A32035A00204AA3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C96EE9D91A32035A00204AA3 /* KRS Online */,
+				C96EE9F21A32035A00204AA3 /* KRS OnlineTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C96EE9D81A32035A00204AA3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C96EE9EC1A32035A00204AA3 /* Main.storyboard in Resources */,
+				C96EE9EE1A32035A00204AA3 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C96EE9F11A32035A00204AA3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C96EE9D61A32035A00204AA3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C96EE9E61A32035A00204AA3 /* KRS_Online.xcdatamodeld in Sources */,
+				C96EE9E31A32035A00204AA3 /* AppDelegate.m in Sources */,
+				C96EE9E91A32035A00204AA3 /* ViewController.m in Sources */,
+				C96EE9E01A32035A00204AA3 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C96EE9EF1A32035A00204AA3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C96EE9FA1A32035B00204AA3 /* KRS_OnlineTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C96EE9F51A32035A00204AA3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C96EE9D91A32035A00204AA3 /* KRS Online */;
+			targetProxy = C96EE9F41A32035A00204AA3 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		C96EE9EA1A32035A00204AA3 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C96EE9EB1A32035A00204AA3 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C96EE9FB1A32035B00204AA3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		C96EE9FC1A32035B00204AA3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C96EE9FE1A32035B00204AA3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				INFOPLIST_FILE = "KRS Online/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		C96EE9FF1A32035B00204AA3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				INFOPLIST_FILE = "KRS Online/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		C96EEA011A32035B00204AA3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "KRS OnlineTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/KRS Online.app/KRS Online";
+			};
+			name = Debug;
+		};
+		C96EEA021A32035B00204AA3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "KRS OnlineTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/KRS Online.app/KRS Online";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C96EE9D51A32035A00204AA3 /* Build configuration list for PBXProject "KRS Online" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C96EE9FB1A32035B00204AA3 /* Debug */,
+				C96EE9FC1A32035B00204AA3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C96EE9FD1A32035B00204AA3 /* Build configuration list for PBXNativeTarget "KRS Online" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C96EE9FE1A32035B00204AA3 /* Debug */,
+				C96EE9FF1A32035B00204AA3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		C96EEA001A32035B00204AA3 /* Build configuration list for PBXNativeTarget "KRS OnlineTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C96EEA011A32035B00204AA3 /* Debug */,
+				C96EEA021A32035B00204AA3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		C96EE9E41A32035A00204AA3 /* KRS_Online.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				C96EE9E51A32035A00204AA3 /* KRS_Online.xcdatamodel */,
+			);
+			currentVersion = C96EE9E51A32035A00204AA3 /* KRS_Online.xcdatamodel */;
+			path = KRS_Online.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = C96EE9D21A32035A00204AA3 /* Project object */;
+}
