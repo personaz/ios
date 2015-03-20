@@ -7,6 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7E0531F01AB5C8050083CB08 /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E0531EF1AB5C8050083CB08 /* SWRevealViewController.m */; };
+		7E0531F41AB5CBE90083CB08 /* SideMenuTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E0531F31AB5CBE90083CB08 /* SideMenuTableViewController.m */; };
+		7E32914F1AB8746B005D7290 /* Helper.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E32914E1AB8746B005D7290 /* Helper.m */; };
+		7EA8C3B91AB9CC2800523C1A /* News.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EA8C3B81AB9CC2800523C1A /* News.m */; };
+		7EA8C3BC1AB9CC2900523C1A /* MataKuliah.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EA8C3BB1AB9CC2900523C1A /* MataKuliah.m */; };
+		7EA8C3BF1AB9CC2900523C1A /* MataKuliahMahasiswa.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EA8C3BE1AB9CC2900523C1A /* MataKuliahMahasiswa.m */; };
+		7EA8C3C21AB9CC2900523C1A /* SemesterMahasiswa.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EA8C3C11AB9CC2900523C1A /* SemesterMahasiswa.m */; };
+		7EA8C3C51AB9CC2900523C1A /* Mahasiswa.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EA8C3C41AB9CC2900523C1A /* Mahasiswa.m */; };
+		7EA8C3C81AB9CC2900523C1A /* Jurusan.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EA8C3C71AB9CC2900523C1A /* Jurusan.m */; };
+		7EA8C3CB1AB9D7C900523C1A /* ProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EA8C3CA1AB9D7C900523C1A /* ProfileViewController.m */; };
+		7EA8C3CE1AB9D91300523C1A /* KrsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EA8C3CD1AB9D91300523C1A /* KrsTableViewController.m */; };
+		7EA8C3D11AB9DA6C00523C1A /* StudyTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EA8C3D01AB9DA6C00523C1A /* StudyTableViewController.m */; };
 		C96EE9E01A32035A00204AA3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C96EE9DF1A32035A00204AA3 /* main.m */; };
 		C96EE9E31A32035A00204AA3 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C96EE9E21A32035A00204AA3 /* AppDelegate.m */; };
 		C96EE9E61A32035A00204AA3 /* KRS_Online.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C96EE9E41A32035A00204AA3 /* KRS_Online.xcdatamodeld */; };
@@ -14,6 +26,7 @@
 		C96EE9EC1A32035A00204AA3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C96EE9EA1A32035A00204AA3 /* Main.storyboard */; };
 		C96EE9EE1A32035A00204AA3 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C96EE9ED1A32035A00204AA3 /* Images.xcassets */; };
 		C96EE9FA1A32035B00204AA3 /* KRS_OnlineTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C96EE9F91A32035B00204AA3 /* KRS_OnlineTests.m */; };
+		C9934A021AB092D4009DA950 /* DashboardController.m in Sources */ = {isa = PBXBuildFile; fileRef = C9934A011AB092D4009DA950 /* DashboardController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,6 +40,30 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		7E0531EE1AB5C8050083CB08 /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
+		7E0531EF1AB5C8050083CB08 /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
+		7E0531F21AB5CBE90083CB08 /* SideMenuTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SideMenuTableViewController.h; sourceTree = "<group>"; };
+		7E0531F31AB5CBE90083CB08 /* SideMenuTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SideMenuTableViewController.m; sourceTree = "<group>"; };
+		7E32914D1AB8746B005D7290 /* Helper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Helper.h; sourceTree = "<group>"; };
+		7E32914E1AB8746B005D7290 /* Helper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Helper.m; sourceTree = "<group>"; };
+		7EA8C3B71AB9CC2800523C1A /* News.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = News.h; sourceTree = "<group>"; };
+		7EA8C3B81AB9CC2800523C1A /* News.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = News.m; sourceTree = "<group>"; };
+		7EA8C3BA1AB9CC2900523C1A /* MataKuliah.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MataKuliah.h; sourceTree = "<group>"; };
+		7EA8C3BB1AB9CC2900523C1A /* MataKuliah.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MataKuliah.m; sourceTree = "<group>"; };
+		7EA8C3BD1AB9CC2900523C1A /* MataKuliahMahasiswa.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MataKuliahMahasiswa.h; sourceTree = "<group>"; };
+		7EA8C3BE1AB9CC2900523C1A /* MataKuliahMahasiswa.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MataKuliahMahasiswa.m; sourceTree = "<group>"; };
+		7EA8C3C01AB9CC2900523C1A /* SemesterMahasiswa.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SemesterMahasiswa.h; sourceTree = "<group>"; };
+		7EA8C3C11AB9CC2900523C1A /* SemesterMahasiswa.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SemesterMahasiswa.m; sourceTree = "<group>"; };
+		7EA8C3C31AB9CC2900523C1A /* Mahasiswa.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Mahasiswa.h; sourceTree = "<group>"; };
+		7EA8C3C41AB9CC2900523C1A /* Mahasiswa.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Mahasiswa.m; sourceTree = "<group>"; };
+		7EA8C3C61AB9CC2900523C1A /* Jurusan.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Jurusan.h; sourceTree = "<group>"; };
+		7EA8C3C71AB9CC2900523C1A /* Jurusan.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Jurusan.m; sourceTree = "<group>"; };
+		7EA8C3C91AB9D7C900523C1A /* ProfileViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProfileViewController.h; sourceTree = "<group>"; };
+		7EA8C3CA1AB9D7C900523C1A /* ProfileViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProfileViewController.m; sourceTree = "<group>"; };
+		7EA8C3CC1AB9D91300523C1A /* KrsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KrsTableViewController.h; sourceTree = "<group>"; };
+		7EA8C3CD1AB9D91300523C1A /* KrsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KrsTableViewController.m; sourceTree = "<group>"; };
+		7EA8C3CF1AB9DA6C00523C1A /* StudyTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StudyTableViewController.h; sourceTree = "<group>"; };
+		7EA8C3D01AB9DA6C00523C1A /* StudyTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StudyTableViewController.m; sourceTree = "<group>"; };
 		C96EE9DA1A32035A00204AA3 /* KRS Online.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "KRS Online.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C96EE9DE1A32035A00204AA3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C96EE9DF1A32035A00204AA3 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -40,6 +77,8 @@
 		C96EE9F31A32035A00204AA3 /* KRS OnlineTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "KRS OnlineTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C96EE9F81A32035A00204AA3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C96EE9F91A32035B00204AA3 /* KRS_OnlineTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KRS_OnlineTests.m; sourceTree = "<group>"; };
+		C9934A001AB092D4009DA950 /* DashboardController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DashboardController.h; sourceTree = "<group>"; };
+		C9934A011AB092D4009DA950 /* DashboardController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DashboardController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +99,43 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7E0531F11AB5C8100083CB08 /* Library */ = {
+			isa = PBXGroup;
+			children = (
+				7E0531EE1AB5C8050083CB08 /* SWRevealViewController.h */,
+				7E0531EF1AB5C8050083CB08 /* SWRevealViewController.m */,
+			);
+			name = Library;
+			sourceTree = "<group>";
+		};
+		7E3291501AB87472005D7290 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				7E32914D1AB8746B005D7290 /* Helper.h */,
+				7E32914E1AB8746B005D7290 /* Helper.m */,
+			);
+			name = Core;
+			sourceTree = "<group>";
+		};
+		7EA8C3B61AB9CBF200523C1A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				7EA8C3C61AB9CC2900523C1A /* Jurusan.h */,
+				7EA8C3C71AB9CC2900523C1A /* Jurusan.m */,
+				7EA8C3C31AB9CC2900523C1A /* Mahasiswa.h */,
+				7EA8C3C41AB9CC2900523C1A /* Mahasiswa.m */,
+				7EA8C3C01AB9CC2900523C1A /* SemesterMahasiswa.h */,
+				7EA8C3C11AB9CC2900523C1A /* SemesterMahasiswa.m */,
+				7EA8C3BD1AB9CC2900523C1A /* MataKuliahMahasiswa.h */,
+				7EA8C3BE1AB9CC2900523C1A /* MataKuliahMahasiswa.m */,
+				7EA8C3BA1AB9CC2900523C1A /* MataKuliah.h */,
+				7EA8C3BB1AB9CC2900523C1A /* MataKuliah.m */,
+				7EA8C3B71AB9CC2800523C1A /* News.h */,
+				7EA8C3B81AB9CC2800523C1A /* News.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
 		C96EE9D11A32035A00204AA3 = {
 			isa = PBXGroup;
 			children = (
@@ -81,10 +157,23 @@
 		C96EE9DC1A32035A00204AA3 /* KRS Online */ = {
 			isa = PBXGroup;
 			children = (
+				7EA8C3B61AB9CBF200523C1A /* Model */,
+				7E3291501AB87472005D7290 /* Core */,
+				7E0531F11AB5C8100083CB08 /* Library */,
 				C96EE9E11A32035A00204AA3 /* AppDelegate.h */,
 				C96EE9E21A32035A00204AA3 /* AppDelegate.m */,
 				C96EE9E71A32035A00204AA3 /* ViewController.h */,
 				C96EE9E81A32035A00204AA3 /* ViewController.m */,
+				C9934A001AB092D4009DA950 /* DashboardController.h */,
+				C9934A011AB092D4009DA950 /* DashboardController.m */,
+				7EA8C3C91AB9D7C900523C1A /* ProfileViewController.h */,
+				7EA8C3CA1AB9D7C900523C1A /* ProfileViewController.m */,
+				7EA8C3CC1AB9D91300523C1A /* KrsTableViewController.h */,
+				7EA8C3CD1AB9D91300523C1A /* KrsTableViewController.m */,
+				7EA8C3CF1AB9DA6C00523C1A /* StudyTableViewController.h */,
+				7EA8C3D01AB9DA6C00523C1A /* StudyTableViewController.m */,
+				7E0531F21AB5CBE90083CB08 /* SideMenuTableViewController.h */,
+				7E0531F31AB5CBE90083CB08 /* SideMenuTableViewController.m */,
 				C96EE9EA1A32035A00204AA3 /* Main.storyboard */,
 				C96EE9ED1A32035A00204AA3 /* Images.xcassets */,
 				C96EE9E41A32035A00204AA3 /* KRS_Online.xcdatamodeld */,
@@ -220,8 +309,21 @@
 			files = (
 				C96EE9E61A32035A00204AA3 /* KRS_Online.xcdatamodeld in Sources */,
 				C96EE9E31A32035A00204AA3 /* AppDelegate.m in Sources */,
+				7EA8C3B91AB9CC2800523C1A /* News.m in Sources */,
 				C96EE9E91A32035A00204AA3 /* ViewController.m in Sources */,
+				7EA8C3CB1AB9D7C900523C1A /* ProfileViewController.m in Sources */,
+				7EA8C3C21AB9CC2900523C1A /* SemesterMahasiswa.m in Sources */,
+				7E32914F1AB8746B005D7290 /* Helper.m in Sources */,
+				7EA8C3D11AB9DA6C00523C1A /* StudyTableViewController.m in Sources */,
+				C9934A021AB092D4009DA950 /* DashboardController.m in Sources */,
+				7EA8C3BF1AB9CC2900523C1A /* MataKuliahMahasiswa.m in Sources */,
 				C96EE9E01A32035A00204AA3 /* main.m in Sources */,
+				7EA8C3CE1AB9D91300523C1A /* KrsTableViewController.m in Sources */,
+				7EA8C3C51AB9CC2900523C1A /* Mahasiswa.m in Sources */,
+				7E0531F41AB5CBE90083CB08 /* SideMenuTableViewController.m in Sources */,
+				7EA8C3BC1AB9CC2900523C1A /* MataKuliah.m in Sources */,
+				7EA8C3C81AB9CC2900523C1A /* Jurusan.m in Sources */,
+				7E0531F01AB5C8050083CB08 /* SWRevealViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -406,6 +508,7 @@
 				C96EE9FF1A32035B00204AA3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C96EEA001A32035B00204AA3 /* Build configuration list for PBXNativeTarget "KRS OnlineTests" */ = {
 			isa = XCConfigurationList;
@@ -414,6 +517,7 @@
 				C96EEA021A32035B00204AA3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

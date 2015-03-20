@@ -8,8 +8,9 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
-
+@interface ViewController : UIViewController <UITextFieldDelegate, UIAlertViewDelegate>
+@property (strong, nonatomic) IBOutlet UITextField *nim;
+@property (strong, nonatomic) IBOutlet UITextField *pass;
 
 @end
 
