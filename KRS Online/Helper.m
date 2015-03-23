@@ -10,7 +10,17 @@
 
 @implementation Helper
 
-static const NSString* LoginUrl = @"http://192.168.0.1/login.php";
+static const NSString* mainUrl = @"http://api";
+static const NSString* LoginUrl = @"http://api/login.php";
+
+- (NSMutableURLRequest* )createPostMutableURLRequestWithData:(NSData* )dataPost toURL:(NSURL* )url {
+    NSMutableURLRequest* request = [[NSMutableURLRequest alloc] initWithURL:url];
+    [request setHTTPMethod:@"POST"];
+    [request setValue:@"application/json" forHTTPHeaderField:@"Content-Type"];
+    [request setValue:@"application/json" forHTTPHeaderField:@"Accept"];
+    [request setHTTPBody:dataPost];
+    return request;
+}
 
 - (NSDictionary *)processLoginWithNIM:(NSString *)nim andPassword:(NSString *)password {
     NSString* param = [NSString stringWithFormat:@"%@", LoginUrl];
@@ -20,15 +30,26 @@ static const NSString* LoginUrl = @"http://192.168.0.1/login.php";
     NSError* error;
     NSData* dataToPost = [NSJSONSerialization dataWithJSONObject:toServer options:0 error:&error];
     
-    NSMutableURLRequest *request = [[NSMutableURLRequest alloc] initWithURL:url];
-    [request setHTTPMethod:@"POST"];
-    [request setValue:@"application/json" forHTTPHeaderField:@"Content-Type"];
-    [request setValue:@"application/json" forHTTPHeaderField:@"Accept"];
-    [request setHTTPBody:dataToPost];
-    
+    NSMutableURLRequest *request = [self createPostMutableURLRequestWithData:dataToPost toURL:url];
     NSHTTPURLResponse* response;
     NSData* responseData = [NSURLConnection sendSynchronousRequest:request returningResponse:&response error:&error];
     NSDictionary* getReturn = [NSJSONSerialization JSONObjectWithData:responseData options:kNilOptions error:&error];
     return getReturn;
+}
+
+- (NSDictionary *)getMahasiswaDetailByNIMAndStoreIt:(NSString *)nim {
+    NSString* param = [NSString stringWithFormat:@"%@/msiswa.php", mainUrl];
+    NSURL* link = [NSURL URLWithString:param];
+    
+    NSDictionary* sendServer = @{@"nim": nim};
+    NSError* error;
+    NSData* dataPost = [NSJSONSerialization dataWithJSONObject:sendServer options:0 error:&error];
+    
+    NSMutableURLRequest *request = [self createPostMutableURLRequestWithData:dataPost toURL:link];
+    NSHTTPURLResponse *response;
+    NSData* responseData = [NSURLConnection sendSynchronousRequest:request returningResponse:&response error:&error];
+    NSDictionary* dataReturn = [NSJSONSerialization JSONObjectWithData:responseData options:kNilOptions error:&error];
+    /** store dataReturn to core data */
+    return dataReturn;
 }
 @end

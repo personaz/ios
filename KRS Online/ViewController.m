@@ -43,15 +43,22 @@
     [super didReceiveMemoryWarning];
 }
 - (IBAction)login:(id)sender {
-    /**if (![self.nim.text  isEqual: @""] && ![self.pass.text  isEqual: @""]) {
+    if (![self.nim.text  isEqual: @""] && ![self.pass.text  isEqual: @""]) {
         Helper *help = [[Helper alloc] init];
         NSDictionary* logger = [help processLoginWithNIM:self.nim.text andPassword:self.pass.text];
-    }*/
-    if ([self.nim.text  isEqual: @"admin"] && [self.pass.text  isEqual: @"admin"]) {
-        DashboardController *dashboard = [self.storyboard instantiateViewControllerWithIdentifier:@"reveal"];
-        [dashboard setModalTransitionStyle:UIModalTransitionStyleCrossDissolve];
-        [self presentViewController:dashboard animated:YES completion:nil];
+        if ([[logger objectForKey:@"available"] isEqual: @"YES"]) {
+            DashboardController *dashboard = [self.storyboard instantiateViewControllerWithIdentifier:@"reveal"];
+            [dashboard setModalTransitionStyle:UIModalTransitionStyleCrossDissolve];
+            [self presentViewController:dashboard animated:YES completion:nil];
+        } else {
+            UIAlertView *alert = [self failLogin];
+            [alert show];
+        }
     }
+}
+
+- (UIAlertView *)failLogin {
+    return [[UIAlertView alloc] initWithTitle:@"Login Failed" message:@"Your NIM or Password is Wrong. Please try again" delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil, nil];
 }
 
 @end
