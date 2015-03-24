@@ -27,6 +27,7 @@
 		C96EE9EE1A32035A00204AA3 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C96EE9ED1A32035A00204AA3 /* Images.xcassets */; };
 		C96EE9FA1A32035B00204AA3 /* KRS_OnlineTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C96EE9F91A32035B00204AA3 /* KRS_OnlineTests.m */; };
 		C9934A021AB092D4009DA950 /* DashboardController.m in Sources */ = {isa = PBXBuildFile; fileRef = C9934A011AB092D4009DA950 /* DashboardController.m */; };
+		D85408C01AC1BB5F00563D62 /* ModelMapper.m in Sources */ = {isa = PBXBuildFile; fileRef = D85408BF1AC1BB5F00563D62 /* ModelMapper.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -79,6 +80,8 @@
 		C96EE9F91A32035B00204AA3 /* KRS_OnlineTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KRS_OnlineTests.m; sourceTree = "<group>"; };
 		C9934A001AB092D4009DA950 /* DashboardController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DashboardController.h; sourceTree = "<group>"; };
 		C9934A011AB092D4009DA950 /* DashboardController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DashboardController.m; sourceTree = "<group>"; };
+		D85408BE1AC1BB5F00563D62 /* ModelMapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ModelMapper.h; sourceTree = "<group>"; };
+		D85408BF1AC1BB5F00563D62 /* ModelMapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ModelMapper.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,6 +114,8 @@
 		7E3291501AB87472005D7290 /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				D85408BE1AC1BB5F00563D62 /* ModelMapper.h */,
+				D85408BF1AC1BB5F00563D62 /* ModelMapper.m */,
 				7E32914D1AB8746B005D7290 /* Helper.h */,
 				7E32914E1AB8746B005D7290 /* Helper.m */,
 			);
@@ -311,6 +316,7 @@
 				C96EE9E31A32035A00204AA3 /* AppDelegate.m in Sources */,
 				7EA8C3B91AB9CC2800523C1A /* News.m in Sources */,
 				C96EE9E91A32035A00204AA3 /* ViewController.m in Sources */,
+				D85408C01AC1BB5F00563D62 /* ModelMapper.m in Sources */,
 				7EA8C3CB1AB9D7C900523C1A /* ProfileViewController.m in Sources */,
 				7EA8C3C21AB9CC2900523C1A /* SemesterMahasiswa.m in Sources */,
 				7E32914F1AB8746B005D7290 /* Helper.m in Sources */,
