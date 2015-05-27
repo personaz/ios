@@ -8,6 +8,8 @@
 
 #import "ViewController.h"
 
-@interface ProfileViewController : ViewController
+@interface ProfileViewController : ViewController <UITextFieldDelegate, UIGestureRecognizerDelegate>
+@property (weak, nonatomic) IBOutlet UIImageView *ImageField;
+@property (weak, nonatomic) IBOutlet UIScrollView *ScrollField;
 
 @end

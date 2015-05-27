@@ -9,5 +9,7 @@
 #import <UIKit/UIKit.h>
 
 @interface DashboardController : UIViewController
+@property (strong, nonatomic) NSDictionary* selectedNews;
+@property (weak, nonatomic) IBOutlet UITextView *textScroll;
 
 @end

@@ -2,7 +2,7 @@
 //  News.m
 //  KRS Online
 //
-//  Created by Muhammad Zulham on 3/18/15.
+//  Created by Surya on 3/28/15.
 //  Copyright (c) 2015 Zulham. All rights reserved.
 //
 
@@ -12,8 +12,8 @@
 @implementation News
 
 @dynamic id_news;
-@dynamic judul;
 @dynamic isi;
+@dynamic judul;
 @dynamic tanggal_berita;
 
 @end

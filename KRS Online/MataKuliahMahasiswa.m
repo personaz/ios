@@ -2,7 +2,7 @@
 //  MataKuliahMahasiswa.m
 //  KRS Online
 //
-//  Created by Muhammad Zulham on 3/18/15.
+//  Created by Surya on 3/28/15.
 //  Copyright (c) 2015 Zulham. All rights reserved.
 //
 
@@ -15,9 +15,9 @@
 
 @dynamic id_mkms;
 @dynamic id_smms;
-@dynamic kode_matkul;
 @dynamic ip;
-@dynamic matKulMSiswaSmMs;
+@dynamic kode_matkul;
 @dynamic matKulMSiswaMatKuliah;
+@dynamic matKulMSiswaSmMs;
 
 @end

@@ -10,4 +10,13 @@
 
 @interface ModelMapper : NSObject
 
+// Mahasiswa
+- (void)saveMahasiswa:(NSDictionary* )data;
+- (NSArray*)fetchRowMahasiswaByNIM:(NSString* )NIM;
+- (void)removeMahasiswaWithNIM:(NSString*)NIM;
+
+// News
+- (void)saveNews:(NSArray*)data;
+- (NSArray*)fetchAllNews;
+- (NSDictionary*)fetchRowNewsById:(NSNumber*)idBerita;
 @end

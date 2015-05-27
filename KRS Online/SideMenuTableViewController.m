@@ -7,6 +7,7 @@
 //
 
 #import "SideMenuTableViewController.h"
+#import "ModelMapper.h"
 
 @interface SideMenuTableViewController ()
 
@@ -48,8 +49,10 @@
     UINavigationController* navigation = (UINavigationController*)segue.destinationViewController;
     navigation.title = [[menuItem objectAtIndex:indexPath.row] capitalizedString];
     if ([segue.identifier isEqualToString:@"logout"]) {
-        /** kalau user log out, hapus semua exisiting database */
-        NSLog(@"youre logged out");
+        NSUserDefaults* userDefault = [NSUserDefaults standardUserDefaults];
+        /** kalau user log out, hapus semua exisiting data in database except berita */
+        ModelMapper* mapper = [[ModelMapper alloc] init];
+        [mapper removeMahasiswaWithNIM:[userDefault objectForKey:@"nim"]];
     }
 }
 @end

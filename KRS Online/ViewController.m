@@ -43,10 +43,17 @@
     [super didReceiveMemoryWarning];
 }
 - (IBAction)login:(id)sender {
-    if (![self.nim.text  isEqual: @""] && ![self.pass.text  isEqual: @""]) {
+    NSString* nim = self.nim.text;
+    NSString* password = self.pass.text;
+    if (![nim isEqual: @""] && ![password isEqual: @""]) {
         Helper *help = [[Helper alloc] init];
-        NSDictionary* logger = [help processLoginWithNIM:self.nim.text andPassword:self.pass.text];
+        NSDictionary* logger = [help processLoginWithNIM:nim andPassword:password];
         if ([[logger objectForKey:@"available"] isEqual: @"YES"]) {
+            [help getAllNewsAndSaveItWithNIM:nim];
+            [help getMahasiswaDetailByNIMAndStoreIt:nim];
+            NSUserDefaults* userDefault = [NSUserDefaults standardUserDefaults];
+            [userDefault setObject:nim forKey:@"nim"];
+            
             DashboardController *dashboard = [self.storyboard instantiateViewControllerWithIdentifier:@"reveal"];
             [dashboard setModalTransitionStyle:UIModalTransitionStyleCrossDissolve];
             [self presentViewController:dashboard animated:YES completion:nil];

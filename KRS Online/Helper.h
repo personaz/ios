@@ -11,8 +11,9 @@
 @interface Helper : NSObject
 
 - (NSDictionary* )processLoginWithNIM:(NSString* )nim andPassword:(NSString* )password;
+- (void)getMahasiswaDetailByNIMAndStoreIt:(NSString* )nim;
 
-- (NSDictionary* )getMahasiswaDetailByNIMAndStoreIt:(NSString* )nim;
+- (void)getAllNewsAndSaveItWithNIM:(NSString*)nim;
 
-- (void)getAllNewsAndSaveIt;
+- (BOOL)changePasswordFromOld:(NSString*)oldPassword toNew:(NSString*)newPassword withNIM:(NSString*)NIM;
 @end
