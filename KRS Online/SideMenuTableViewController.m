@@ -53,6 +53,7 @@
         /** kalau user log out, hapus semua exisiting data in database except berita */
         ModelMapper* mapper = [[ModelMapper alloc] init];
         [mapper removeMahasiswaWithNIM:[userDefault objectForKey:@"nim"]];
+        [mapper removeAllNews];
     }
 }
 @end

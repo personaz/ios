@@ -11,10 +11,10 @@
 
 @implementation Helper
 
-// static const NSString* mainUrl = @"http://api";
-// static const NSString* LoginUrl = @"http://api/login.php";
-static const NSString* mainUrl = @"http://www.krsonline-muhzulham.com";
-static const NSString* LoginUrl = @"http://www.krsonline-muhzulham.com/login.php";
+static const NSString* mainUrl = @"http://api";
+static const NSString* LoginUrl = @"http://api/login.php";
+//static const NSString* mainUrl = @"http://www.krsonline-muhzulham.com";
+//static const NSString* LoginUrl = @"http://www.krsonline-muhzulham.com/login.php";
 
 - (NSMutableURLRequest* )createPostMutableURLRequestWithData:(NSData* )dataPost toURL:(NSURL* )url {
     NSMutableURLRequest* request = [[NSMutableURLRequest alloc] initWithURL:url];
@@ -73,6 +73,23 @@ static const NSString* LoginUrl = @"http://www.krsonline-muhzulham.com/login.php
     
     ModelMapper* mapper = [[ModelMapper alloc] init];
     [mapper saveNews:dataReturn];
+}
+
+- (void)getAllMataKuliahWithIdJurusan:(NSNumber *)jurusan {
+    NSString* param = [NSString stringWithFormat:@"%@/matkul.php", mainUrl];
+    NSURL* link = [NSURL URLWithString:param];
+    
+    NSDictionary* body = @{@"jurusan": jurusan};
+    NSError* error;
+    NSData* dataPost = [NSJSONSerialization dataWithJSONObject:body options:0 error:&error];
+    
+    NSMutableURLRequest* request = [self createPostMutableURLRequestWithData:dataPost toURL:link];
+    NSHTTPURLResponse* response;
+    NSData* responseData = [NSURLConnection sendSynchronousRequest:request returningResponse:&response error:&error];
+    NSArray* dataReturn = [NSJSONSerialization JSONObjectWithData:responseData options:kNilOptions error:&error];
+    
+    ModelMapper* mapper = [[ModelMapper alloc] init];
+    [mapper saveAllMataKuliah:dataReturn];
 }
 
 - (BOOL)changePasswordFromOld:(NSString *)oldPassword toNew:(NSString *)newPassword withNIM:(NSString *)NIM {

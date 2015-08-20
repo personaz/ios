@@ -15,5 +15,7 @@
 
 - (void)getAllNewsAndSaveItWithNIM:(NSString*)nim;
 
+- (void)getAllMataKuliahWithIdJurusan:(NSNumber*)jurusan;
+
 - (BOOL)changePasswordFromOld:(NSString*)oldPassword toNew:(NSString*)newPassword withNIM:(NSString*)NIM;
 @end

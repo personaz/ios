@@ -19,4 +19,10 @@
 - (void)saveNews:(NSArray*)data;
 - (NSArray*)fetchAllNews;
 - (NSDictionary*)fetchRowNewsById:(NSNumber*)idBerita;
+- (void)removeAllNews;
+
+//Mata Kuliah
+- (void)saveAllMataKuliah:(NSArray*)data;
+- (NSArray*)fetchAllMataKuliahWithSemester:(NSNumber*)semester;
+- (void)removeAllMataKuliah;
 @end

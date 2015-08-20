@@ -11,6 +11,7 @@
 // Model
 #import "Mahasiswa.h"
 #import "News.h"
+#import "MataKuliah.h"
 
 @interface ModelMapper()
 @property (strong, nonatomic) NSManagedObjectContext* context;
@@ -133,6 +134,62 @@
         return nil;
     }
     return rowNews;
+}
+
+- (void)removeAllNews {
+    NSManagedObjectContext* objectContext = [self getManagetObjectContext];
+    NSArray* allNews = [self fetchAllNews];
+    for (int i = 0; i < [allNews count]; i++) {
+        News* berita = [allNews objectAtIndex:i];
+        [objectContext deleteObject:berita];
+    }
+    NSError* error;
+    if (![objectContext save:&error]) {
+        NSLog(@"Error while delete %@, %@", error, [error userInfo]);
+    }
+}
+
+- (void)saveAllMataKuliah:(NSArray *)data {
+    NSManagedObjectContext* objectContext = [self getManagetObjectContext];
+    
+    for (NSUInteger i = 0; i < [data count]; i++) {
+        MataKuliah* matkul = [NSEntityDescription insertNewObjectForEntityForName:@"MataKuliah" inManagedObjectContext:objectContext];
+        matkul.id_jurusan = [NSNumber numberWithInt:[[[data objectAtIndex:i] objectForKey:@"id_jurusan"] intValue]];
+        matkul.kode_matkul = [[data objectAtIndex:i] objectForKey:@"kode_matkul"];
+        matkul.nama_matkul = [[data objectAtIndex:i] objectForKey:@"nama_matkul"];
+        matkul.type_semester = [NSNumber numberWithInt:[[[data objectAtIndex:i] objectForKey:@"type_semester"] intValue]];
+    }
+    
+    NSError* error;
+    if (![objectContext save:&error]) {
+        NSLog(@"Error on Mata Kuliah at %@, %@", error, [error userInfo]);
+    }
+}
+
+- (NSArray *)fetchAllMataKuliahWithSemester:(NSNumber *)semester {
+    NSManagedObjectContext* objectContext = [self getManagetObjectContext];
+    NSEntityDescription* entity = [NSEntityDescription entityForName:@"MataKuliah" inManagedObjectContext:objectContext];
+    NSPredicate* predicate = [NSPredicate predicateWithFormat:nil];
+    if (semester > 0) {
+        predicate = [NSPredicate predicateWithFormat:@"type_semester = %@", semester];
+    }
+    NSSortDescriptor* byCode = [NSSortDescriptor sortDescriptorWithKey:@"kode_matkul" ascending:YES];
+    NSFetchRequest* request = [[NSFetchRequest alloc] init];
+    [request setReturnsObjectsAsFaults:NO];
+    [request setEntity:entity];
+    [request setPredicate:predicate];
+    [request setSortDescriptors:@[byCode]];
+    NSError* error;
+    
+    NSArray* allMatkul = [objectContext executeFetchRequest:request error:&error];
+    if (!allMatkul) {
+        return nil;
+    }
+    return allMatkul;
+}
+
+- (void)removeAllMataKuliah {
+    NSManagedObjectContext* objectContext = [self getManagetObjectContext];
 }
 
 @end
