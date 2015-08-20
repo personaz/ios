@@ -11,8 +11,10 @@
 
 @implementation Helper
 
-static const NSString* mainUrl = @"http://api";
-static const NSString* LoginUrl = @"http://api/login.php";
+// static const NSString* mainUrl = @"http://api";
+// static const NSString* LoginUrl = @"http://api/login.php";
+static const NSString* mainUrl = @"http://www.krsonline-muhzulham.com";
+static const NSString* LoginUrl = @"http://www.krsonline-muhzulham.com/login.php";
 
 - (NSMutableURLRequest* )createPostMutableURLRequestWithData:(NSData* )dataPost toURL:(NSURL* )url {
     NSMutableURLRequest* request = [[NSMutableURLRequest alloc] initWithURL:url];
@@ -35,6 +37,7 @@ static const NSString* LoginUrl = @"http://api/login.php";
     NSHTTPURLResponse* response;
     NSData* responseData = [NSURLConnection sendSynchronousRequest:request returningResponse:&response error:&error];
     NSDictionary* getReturn = [NSJSONSerialization JSONObjectWithData:responseData options:kNilOptions error:&error];
+    NSLog(@"%@", getReturn);
     return getReturn;
 }
 
